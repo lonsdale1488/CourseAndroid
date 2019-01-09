@@ -88,19 +88,13 @@ public class CommentsList extends Fragment {
                     m.put(ATTRIBUTE_NAME_BODY, body[i]);
                     data.add(m);
                 }
-// массив имен атрибутов, из которых будут читаться данные
-
                 String[] from = {ATTRIBUTE_NAME_NAME, ATTRIBUTE_NAME_EMAIL,
                         ATTRIBUTE_NAME_BODY};
-//            // массив ID View-компонентов, в которые будут вставлять данные
                 int[] to = {R.id.nameComments, R.id.emailComments, R.id.bodyComments};
-// создаем адаптер
                 SimpleAdapter sAdapter = new SimpleAdapter(mCtx, data, R.layout.item4, from, to);
-                // определяем список и присваиваем ему адаптер
                 lvSimple = (ListView) inflaterView.findViewById(R.id.commentsList);
                 lvSimple.setAdapter(sAdapter);
                 Log.d(LOG_TAG, name.length + "");
-
             }
 
             @Override

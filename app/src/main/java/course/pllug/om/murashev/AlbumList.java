@@ -64,13 +64,11 @@ public class AlbumList extends Fragment {
                 List<Albums> list = response.body();
                 Log.d(LOG_TAG, list.size() + " ");
 
-//                String[]   texts1 = new String[list.size()];
-//                String[] texts2 = new String[list.size()];
+
                 String[] texts3 = new String[list.size()];
                 for (int i = 0; i < list.size(); i++) {
 
-//                    texts1[i] = String.valueOf(list.get(i).getId()) ;
-//                    texts2[i] = String.valueOf(list.get(i).getUserId());
+
                     texts3[i] = list.get(i).getTitle();
 
                 }
@@ -81,20 +79,19 @@ public class AlbumList extends Fragment {
 
                 for (int i = 0; i < texts3.length; i++) {
                     m = new HashMap<String, Object>();
-//                    m.put(ATTRIBUTE_NAME_NAME, texts1[i]);
-//                    m.put(ATTRIBUTE_NAME_TEXT2, texts2[i]);
+
                     m.put(ATTRIBUTE_NAME_TEXT3, texts3[i]);
                     data.add(m);
                 }
-// массив имен атрибутов, из которых будут читаться данные
+
 
                 String[] from = {ATTRIBUTE_NAME_TEXT1, ATTRIBUTE_NAME_TEXT2,
                         ATTRIBUTE_NAME_TEXT3};
-//            // массив ID View-компонентов, в которые будут вставлять данные
+
                 int[] to = {R.id.tvText1, R.id.tvText2, R.id.tvText3};
-// создаем адаптер
+
                 SimpleAdapter sAdapter = new SimpleAdapter(mCtx, data, R.layout.item1, from, to);
-                // определяем список и присваиваем ему адаптер
+
                 lvSimple = (ListView) inflaterView.findViewById(R.id.lvSimple);
                 lvSimple.setAdapter(sAdapter);
                 Log.d(LOG_TAG, texts3.length + "");

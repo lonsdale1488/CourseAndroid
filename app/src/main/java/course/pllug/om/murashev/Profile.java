@@ -18,17 +18,13 @@ public class Profile extends Fragment {
         super.onAttach(activity);
         Log.d(LOG_TAG, "Fragment1 onAttach");
     }
-
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(LOG_TAG, "Fragment1 onCreate");
-
     }
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         inflaterView = inflater.inflate(R.layout.profile, container,false);
-
         return inflaterView;
     }
 }

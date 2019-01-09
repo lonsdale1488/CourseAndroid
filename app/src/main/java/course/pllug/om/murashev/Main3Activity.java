@@ -46,7 +46,7 @@ public class Main3Activity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
-    public void replaceFragment(Fragment fragment) {///---------------------------------
+    public void replaceFragment(Fragment fragment) {
         if (fragment!=null) {
             FragmentManager manager = getSupportFragmentManager();
             manager.beginTransaction()
@@ -58,7 +58,7 @@ public class Main3Activity extends AppCompatActivity
     public void showProfile()
     {
         replaceFragment(new Profile());
-    }//----------------------------
+    }
 
     public void showAlbumList()
     {

@@ -25,14 +25,6 @@ public class AuthorizationActivity extends AppCompatActivity {
                     .commit();
         }
     }
-
-//        public void replaceFragment(Fragment fragment, int containerId) {
-//            FragmentManager manager = getSupportFragmentManager();
-//            manager.beginTransaction()
-//                    .replace(containerId, fragment)
-//                    .addToBackStack(null)
-//                    .commit();
-//        }
         public void showsingln() {
             replaceFragment(new SingIn());
 

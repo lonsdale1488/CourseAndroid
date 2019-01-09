@@ -22,11 +22,9 @@ public class ForgotPassword extends Fragment {
         super.onAttach(activity);
         Log.d(LOG_TAG, "Fragment1 onAttach");
     }
-
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(LOG_TAG, "Fragment1 onCreate");
-
     }
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -38,7 +36,6 @@ public class ForgotPassword extends Fragment {
             @Override
             public void onClick(View v) {
                 if (!(TextUtils.isEmpty(emailforgot.getText().toString()) ))
-
                     ((AuthorizationActivity) getActivity()).showsingln();
             }
         });

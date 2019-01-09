@@ -35,7 +35,7 @@ public class PostNumber extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         inflaterView = inflater.inflate(R.layout.fragment_post_number, container, false);
 
         NetworkService.getInstance().getJSONApi().getPostsWithID(number).enqueue(new Callback<Posts>() {

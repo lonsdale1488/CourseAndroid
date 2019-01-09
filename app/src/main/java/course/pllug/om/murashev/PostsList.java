@@ -68,9 +68,7 @@ public class PostsList extends Fragment {
                 String[] from = {ATTRIBUTE_NAME_POST};
 
                 int[] to = {R.id.item3Text};
-// создаем адаптер
                 SimpleAdapter sAdapter = new SimpleAdapter(mCtx, data, R.layout.item3, from, to);
-                // определяем список и присваиваем ему адаптер
                 lvSimple = (ListView) inflaterView.findViewById(R.id.albumList);
                 lvSimple.setAdapter(sAdapter);
                 Log.d(LOG_TAG, "Create list");

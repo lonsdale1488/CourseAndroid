@@ -54,14 +54,14 @@ public class PhotoAlbum extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         inflaterView = inflater.inflate(R.layout.fragment_photo_album, container, false);
         NetworkService.getInstance().getJSONApi().getAllPhoto().enqueue(new Callback<List<Photo>>() {
             @Override
             public void onResponse(Call<List<Photo>> call, Response<List<Photo>> response) {
                 List<Photo> list = response.body();
                 Log.d(LOG_TAG, "size "+ list.size() + " ");
-//
+
 
                 String[] imeg = new String[list.size()];
                 for (int i = 0; i < 20; i++) {

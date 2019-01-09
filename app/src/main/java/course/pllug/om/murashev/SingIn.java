@@ -16,12 +16,6 @@ public class SingIn extends Fragment{
     View inflaterView;
     EditText pasword, login;
 
-//    @Override
-//    public void onAttach(Activity activity) {
-//        super.onAttach(activity);
-//        Log.d(LOG_TAG, "Fragment1 onAttach");
-//    }
-
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(LOG_TAG, "Fragment1 onCreate");
