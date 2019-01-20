@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 public class Profile extends Fragment {
     final String LOG_TAG = "ProfileLogs";
-    View inflaterView;
+    View root;
 
     @Override
     public void onAttach(Activity activity) {
@@ -24,8 +24,8 @@ public class Profile extends Fragment {
     }
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        inflaterView = inflater.inflate(R.layout.profile, container,false);
-        return inflaterView;
+        root = inflater.inflate(R.layout.profile, container,false);
+        return root;
     }
 }
 

@@ -6,6 +6,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import course.pllug.om.murashev.model.SingUp.SingUpFragment;
+import course.pllug.om.murashev.model.Singln.SingInFragment;
+
 public class AuthorizationActivity extends AppCompatActivity {
 
 
@@ -22,27 +25,17 @@ public class AuthorizationActivity extends AppCompatActivity {
             manager.beginTransaction()
                     .replace(R.id.fragment_container, fragment)
                     .addToBackStack(null)
-                    .commit();
-        }
+                    .commit(); }
     }
-        public void showsingln() {
-            replaceFragment(new SingIn());
+    public void showsingln() { replaceFragment(new SingInFragment()); }
 
-        }
-        public void showsinglUp() {
-        SingUp singUp = new SingUp();
-        replaceFragment(singUp);
+    public void showsinglUp() { replaceFragment(new SingUpFragment()); }
+
+    public void showforgotPassword() { replaceFragment(new ForgotPassword());
     }
-
-    public void showforgotPassword() {
-
-        replaceFragment(new ForgotPassword());
-    }
-
     public void showMain3 ()
     { Intent intent = new Intent(this,Main3Activity.class);
         startActivity(intent);
     }
-
     }
 
