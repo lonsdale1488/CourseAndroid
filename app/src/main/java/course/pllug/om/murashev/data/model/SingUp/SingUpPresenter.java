@@ -1,15 +1,18 @@
-package course.pllug.om.murashev.model.SingUp;
+package course.pllug.om.murashev.data.model.SingUp;
 
+import android.app.Activity;
 import android.text.TextUtils;
+import android.widget.Toast;
 
 import course.pllug.om.murashev.AuthorizationActivity;
-import course.pllug.om.murashev.model.Singln.SingInContract;
-import course.pllug.om.murashev.model.Singln.SingInFragment;
+import course.pllug.om.murashev.data.model.Singln.SingInContract;
+import course.pllug.om.murashev.data.model.Singln.SingInFragment;
 
 public class SingUpPresenter implements SingUpContract.SingUpPresenter{
     private SingUpContract.SingUpView view;
     private SingUpFragment fragment;
     final String LOG_TAG = "SingiNLogs";
+
 
     public SingUpPresenter(SingUpContract.SingUpView view, SingUpFragment fragment) {
         this.view = view;
@@ -28,6 +31,7 @@ public class SingUpPresenter implements SingUpContract.SingUpPresenter{
     @Override
     public void showRegistration() {
         validateInput();
+        Toast.makeText(fragment.getActivity(),"Save",Toast.LENGTH_SHORT).show();
     }
 
     private void validateInput()

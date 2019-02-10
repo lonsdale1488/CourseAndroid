@@ -3,36 +3,181 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_margin="50dp"
-        android:orientation="vertical">
+    android:orientation="vertical"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/SingInLeyoutBack"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
         <ImageView
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:src="@drawable/person"
-            android:layout_weight="1"
             android:layout_gravity="center"
+            android:src="@drawable/person"
+            android:layout_marginTop="50dp"
+
             />
-        <TextView
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="@string/nickname"
+                android:textColor="@color/SingInLeyoutFront"
+                android:background="@color/SingInLeyoutBack"
+                android:layout_margin="10dp"
+               />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/SingInLeyoutBack"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                >
+            <TextView
+                android:id="@+id/hoursnumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="18dp"
+                android:textColor="@color/SingInLeyoutFront"
+                android:background="@color/SingInLeyoutBack"
+                android:layout_margin="5dp"/>
+             <TextView
+                android:id="@+id/hour"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="hous"
+                android:textSize="18dp"
+                android:textColor="@color/SingInLeyoutFront"
+                android:background="@color/SingInLeyoutBack"
+                android:layout_margin="5dp"/>
+                <TextView
+                    android:id="@+id/daynumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="18dp"
+                    android:textColor="@color/SingInLeyoutFront"
+                    android:background="@color/SingInLeyoutBack"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:id="@+id/day"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="day"
+                    android:textSize="18dp"
+                    android:textColor="@color/SingInLeyoutFront"
+                    android:background="@color/SingInLeyoutBack"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:id="@+id/mounthnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="18dp"
+                    android:textColor="@color/SingInLeyoutFront"
+                    android:background="@color/SingInLeyoutBack"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:id="@+id/mounth"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:text="mouthns"
+                    android:textSize="18dp"
+                    android:textColor="@color/SingInLeyoutFront"
+                    android:background="@color/SingInLeyoutBack"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="name"
+            android:background="@color/SingInLeyoutFront"
+            android:orientation="vertical"
             android:layout_weight="1"
-            android:layout_gravity="center"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="inform"
-            android:layout_weight="1"
-            android:layout_gravity="center"/>
+            android:layout_margin="10dp"
+          >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biethday"
+                android:textColor="@color/SingInLeyoutBack"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/birstday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColorHint="@color/SingInHintTextcolor"
+                android:gravity="center"
+                android:inputType="date"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MY ACCOUNT"
+                android:textColor="@color/SingInLeyoutBack" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="FirstName"
+                android:textColor="@color/SingInLeyoutBack"
+                android:layout_margin="10dp"/>
 
+            <TextView
+                android:id="@+id/FirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="text"
+                android:hint="Enter your name"
+                android:textColorHint="@color/SingInHintTextcolor" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LastName"
+                android:textColor="@color/SingInLeyoutBack"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/LastName"
+                android:hint="Enter your lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="text"
+                android:textColorHint="@color/SingInHintTextcolor" />
     </LinearLayout>
 
 </LinearLayout>

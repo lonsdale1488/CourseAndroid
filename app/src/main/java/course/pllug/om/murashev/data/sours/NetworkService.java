@@ -1,4 +1,4 @@
-package course.pllug.om.murashev.model;
+package course.pllug.om.murashev.data.sours;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

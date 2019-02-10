@@ -1,4 +1,4 @@
-package course.pllug.om.murashev.model.users;
+package course.pllug.om.murashev.data.model.users;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

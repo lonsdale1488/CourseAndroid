@@ -1,4 +1,4 @@
-package course.pllug.om.murashev.model.Singln;
+package course.pllug.om.murashev.data.model.Singln;
 
 import android.view.View;
 

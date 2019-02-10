@@ -1,16 +1,10 @@
-package course.pllug.om.murashev.model.Singln;
+package course.pllug.om.murashev.data.model.Singln;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
-
-import course.pllug.om.murashev.AuthorizationActivity;
 import course.pllug.om.murashev.R;
 
 public class SingInFragment extends Fragment {

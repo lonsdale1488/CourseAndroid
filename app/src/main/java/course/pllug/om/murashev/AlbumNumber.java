@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 
 
-import course.pllug.om.murashev.model.Albums;
-import course.pllug.om.murashev.model.NetworkService;
+import course.pllug.om.murashev.data.model.Albums;
+import course.pllug.om.murashev.data.sours.NetworkService;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

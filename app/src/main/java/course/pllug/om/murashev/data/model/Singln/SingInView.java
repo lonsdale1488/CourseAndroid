@@ -1,4 +1,4 @@
-package course.pllug.om.murashev.model.Singln;
+package course.pllug.om.murashev.data.model.Singln;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import course.pllug.om.murashev.AuthorizationActivity;
 import course.pllug.om.murashev.R;
@@ -15,9 +16,10 @@ import course.pllug.om.murashev.R;
 public class SingInView implements SingInContract.SinglInView {
 
 
-    private Button singIn, singUp, forgotpassword;
+    private Button singIn;
     private EditText pasword, login;
     private SingInContract.ISignInPresenter presenter;
+    private TextView singUp, forgotpassword;
 
 
     @Override
@@ -27,8 +29,8 @@ public class SingInView implements SingInContract.SinglInView {
 
     public void init(View root) {
         singIn = (Button) root.findViewById(R.id.singin);
-        singUp = (Button) root.findViewById(R.id.singup);
-        forgotpassword  = (Button) root.findViewById(R.id.forgotpassword);
+        singUp = (TextView) root.findViewById(R.id.singup);
+        forgotpassword  = (TextView) root.findViewById(R.id.forgotpassword);
         pasword = (EditText)  root.findViewById(R.id.pas);
         login = (EditText) root.findViewById(R.id.log);
         initListener();

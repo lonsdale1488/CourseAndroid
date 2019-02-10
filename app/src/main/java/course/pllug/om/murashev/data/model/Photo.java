@@ -1,42 +1,25 @@
-package course.pllug.om.murashev.model;
+package course.pllug.om.murashev.data.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class Photo {
 
-//    long albumI;
-//    long id;
-//    String title;
-//    String url;
-//    String thumbnailUrl;
-
-
-
-
     @SerializedName("albumI")
     @Expose
     private long albumI;
-
-
 
     @SerializedName("id")
     @Expose
     private long id;
 
-
-
     @SerializedName("title")
     @Expose
     private String title;
 
-
-
     @SerializedName("url")
     @Expose
     private String url;
-
-
 
     @SerializedName("thumbnailUrl")
     @Expose
@@ -77,11 +60,5 @@ public class Photo {
     public void setThumbnailUrl(String thumbnailUrl) {
         this.thumbnailUrl = thumbnailUrl;
     }
-//    {
-//        "albumId": 1,
-//            "id": 1,
-//            "title": "accusamus beatae ad facilis cum similique qui sunt",
-//            "url": "https://via.placeholder.com/600/92c952",
-//            "thumbnailUrl": "https://via.placeholder.com/150/92c952"
-//    }
+
 }

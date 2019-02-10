@@ -6,19 +6,15 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_profile"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_menu_manage"
             android:title="MyProfile" />
         <item
             android:id="@+id/nav_posts"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Posts" />
         <item
-            android:id="@+id/nav_comment"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Comment" />
-        <item
             android:id="@+id/nav_album"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_menu_gallery"
             android:title="Album" />
         <item
             android:id="@+id/nav_photo"
@@ -33,13 +29,9 @@
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/Exit"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Yes or now" />
-            <!--<item-->
-                <!--android:id="@+id/nav_send"-->
-                <!--android:icon="@drawable/ic_menu_send"-->
-                <!--android:title="Send" />-->
+                android:title="Exit" />
         </menu>
     </item>
 

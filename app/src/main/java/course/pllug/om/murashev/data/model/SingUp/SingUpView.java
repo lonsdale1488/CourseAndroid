@@ -1,14 +1,18 @@
-package course.pllug.om.murashev.model.SingUp;
+package course.pllug.om.murashev.data.model.SingUp;
 
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import course.pllug.om.murashev.AuthorizationActivity;
 import course.pllug.om.murashev.R;
 
 public class SingUpView implements SingUpContract.SingUpView {
-      private   Button registedReg, singInReg, forgotpasReg;
-      private   View root;
+      private Button registedReg;
+      private TextView singInReg, forgotpasReg;
+      private View root;
       private EditText paswordReg, loginReg, emailReg;
       private SingUpContract.SingUpPresenter presenter;
 
@@ -19,12 +23,13 @@ public class SingUpView implements SingUpContract.SingUpView {
     @Override
     public void init(View root) {
             registedReg = (Button) root.findViewById(R.id.registed);
-            singInReg = (Button) root.findViewById(R.id.singinreg);
-            forgotpasReg  = (Button) root.findViewById(R.id.forgotpasswordreg);
+            singInReg = (TextView) root.findViewById(R.id.singinreg);
+            forgotpasReg  = (TextView) root.findViewById(R.id.forgotpasswordreg);
             paswordReg = (EditText)  root.findViewById(R.id.pasreg);
             loginReg = (EditText) root.findViewById(R.id.logreg);
             emailReg = (EditText) root.findViewById(R.id.emailreg);
             Listenet();
+
     }
 
     public void Listenet()
@@ -33,7 +38,6 @@ public class SingUpView implements SingUpContract.SingUpView {
                 @Override
                 public void onClick(View v) {
                     presenter.showRegistration();
-
                 }
             });
             forgotpasReg.setOnClickListener(new View.OnClickListener() {

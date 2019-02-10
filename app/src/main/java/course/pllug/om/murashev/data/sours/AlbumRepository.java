@@ -1,8 +1,12 @@
-package course.pllug.om.murashev.model;
+package course.pllug.om.murashev.data.sours;
 
 import java.util.List;
 
-import course.pllug.om.murashev.model.users.Users;
+import course.pllug.om.murashev.data.model.Albums;
+import course.pllug.om.murashev.data.model.Comments;
+import course.pllug.om.murashev.data.model.Photo;
+import course.pllug.om.murashev.data.model.Posts;
+import course.pllug.om.murashev.data.model.users.Users;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;

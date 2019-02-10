@@ -1,4 +1,4 @@
-package course.pllug.om.murashev.model.Singln;
+package course.pllug.om.murashev.data.model.Singln;
 
 import android.text.TextUtils;
 import android.util.Log;
@@ -26,7 +26,7 @@ public class SingInPresenter implements SingInContract.ISignInPresenter {
         Log.d(LOG_TAG, login);
         Log.d(LOG_TAG, password);
         if (!(TextUtils.isEmpty(login) || TextUtils.isEmpty(password))) {
-              ((AuthorizationActivity) fragment.getActivity()).showMain3();
+              ((AuthorizationActivity) fragment.getActivity()).showMain();
         }
 
 

@@ -16,8 +16,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import course.pllug.om.murashev.model.Comments;
-import course.pllug.om.murashev.model.NetworkService;
+import course.pllug.om.murashev.data.model.Comments;
+import course.pllug.om.murashev.data.sours.NetworkService;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -47,10 +47,9 @@ public class CommentsList extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         inflaterView = inflater.inflate(R.layout.fragment_comments_list, container, false);
         NetworkService.getInstance().getJSONApi().getAllComments().enqueue(new Callback<List<Comments>>() {
-
 
             @Override
             public void onResponse(@NonNull Call<List<Comments>> call,@NonNull Response<List<Comments>> response) {
@@ -62,8 +61,6 @@ public class CommentsList extends Fragment {
                         sizeComents = sizeComents + 1;
                     }
                 }
-
-
                 String[] name = new String[sizeComents];
                 String[] email = new String[sizeComents];
                 String[] body = new String[sizeComents];

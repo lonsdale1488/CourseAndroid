@@ -9,20 +9,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
-import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.SimpleAdapter;
 
-import com.squareup.picasso.Picasso;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-import course.pllug.om.murashev.model.Albums;
-import course.pllug.om.murashev.model.NetworkService;
-import course.pllug.om.murashev.model.Photo;
+import course.pllug.om.murashev.adapter.ImageListAdapter;
+import course.pllug.om.murashev.data.sours.NetworkService;
+import course.pllug.om.murashev.data.model.Photo;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

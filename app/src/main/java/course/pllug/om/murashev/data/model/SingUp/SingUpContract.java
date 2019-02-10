@@ -1,4 +1,4 @@
-package course.pllug.om.murashev.model.SingUp;
+package course.pllug.om.murashev.data.model.SingUp;
 
 import android.view.View;
 

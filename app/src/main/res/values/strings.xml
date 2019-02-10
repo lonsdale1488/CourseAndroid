@@ -1,18 +1,25 @@
 <resources>
     <string name="app_name">murashev</string>
     <string name="sing_in">Sing In</string>
-    <string name="sing_up">Sing Up</string>
-    <string name="forgot_password">Forgot password</string>
+    <string name="sing_in2">You have account? Click hire</string>
+    <string name="singInLogin">Login</string>
+    <string name="singInPassword">Password</string>
+    <string name="singInHintLogin">Enter your login</string>
+    <string name="singInHintPassword">Enter your password</string>
+    <string name="sing_up">Want registration? Click hire</string>
+    <string name="forgot_password">Forgot your password? Click hire</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
+    <string name="email">Write your emai;</string>
+    <string name="nickname">/@Supermen</string>
+
     <string-array name="screen_array">
         <item>Screen 1</item>
         <item>Screen 2</item>
         <item>Screen 3</item>
     </string-array>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text<string name="hello_blank_fragment">Hello blank fragment</string> -->
     <string name="title_activity_main2">Main2Activity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -21,5 +28,9 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_main3">Main3Activity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>
