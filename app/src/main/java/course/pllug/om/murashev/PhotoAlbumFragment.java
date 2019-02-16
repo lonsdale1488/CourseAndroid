@@ -21,9 +21,9 @@ import retrofit2.Response;
 
 
 
-public class PhotoAlbum extends Fragment {
+public class PhotoAlbumFragment extends Fragment {
 
-    final String LOG_TAG = "PhotoAlbum";
+    final String LOG_TAG = "PhotoAlbumFragment";
 
     final String ATTRIBUTE_NAME_TEXT1 = "imeg";
     private final Context mCtx;
@@ -32,7 +32,7 @@ public class PhotoAlbum extends Fragment {
 
 
     @SuppressLint("ValidFragment")
-    public PhotoAlbum(Context mCtx) {
+    public PhotoAlbumFragment(Context mCtx) {
         this.mCtx = mCtx;
     }
 

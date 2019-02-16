@@ -24,7 +24,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 
-public class PostsList extends Fragment {
+public class PostsListFragment extends Fragment {
     final String LOG_TAG = "PostList";
     final String ATTRIBUTE_NAME_POST = "text";
     final String ATTRIBUTE_BODY_POST = "text1";
@@ -32,7 +32,7 @@ public class PostsList extends Fragment {
     ListView lvSimple;
     View inflaterView;
     TextView title;
-    public PostsList(Context mCtx) {
+    public PostsListFragment(Context mCtx) {
         this.mCtx = mCtx;
     }
 
@@ -83,7 +83,7 @@ public class PostsList extends Fragment {
                     public void onItemClick(AdapterView<?> parent, View itemClicked, int position,
                                             long id) {
 
-                        PostNumber.number = position + 1;
+                        PostElementFragment.number = position + 1;
                         ((MainActivity) getActivity()).showPostNumber();
                         Log.d(LOG_TAG, "work click");
                     }
@@ -99,7 +99,7 @@ public class PostsList extends Fragment {
 //                    public void onItemClick(AdapterView<?> parent, View itemClicked, int position,
 //                                            long id) {
 //
-//                        PostNumber.number = position + 1;
+//                        PostElementFragment.number = position + 1;
 //                        ((MainActivity) getActivity()).showPostNumber();
 //                        Log.d(LOG_TAG, "work click");
 //                    }

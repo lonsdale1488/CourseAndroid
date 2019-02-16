@@ -9,6 +9,7 @@ public class SingInPresenter implements SingInContract.ISignInPresenter {
     private SingInContract.SinglInView view;
     private SingInFragment fragment;
     final String LOG_TAG = "SingiNLogs";
+
     public SingInPresenter(SingInContract.SinglInView view, SingInFragment fragment) {
         this.view = view;
         this.fragment = fragment;
@@ -26,11 +27,12 @@ public class SingInPresenter implements SingInContract.ISignInPresenter {
         Log.d(LOG_TAG, login);
         Log.d(LOG_TAG, password);
         if (!(TextUtils.isEmpty(login) || TextUtils.isEmpty(password))) {
-              ((AuthorizationActivity) fragment.getActivity()).showMain();
+            ((AuthorizationActivity) fragment.getActivity()).showMain();
         }
 
 
     }
+
     @Override
     public void showSignUp() {
         ((AuthorizationActivity) fragment.getActivity()).showsinglUp();

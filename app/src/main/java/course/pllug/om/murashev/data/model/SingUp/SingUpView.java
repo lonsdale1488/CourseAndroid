@@ -4,15 +4,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import course.pllug.om.murashev.AuthorizationActivity;
 import course.pllug.om.murashev.R;
 
 public class SingUpView implements SingUpContract.SingUpView {
       private Button registedReg;
       private TextView singInReg, forgotpasReg;
-      private View root;
       private EditText paswordReg, loginReg, emailReg;
       private SingUpContract.SingUpPresenter presenter;
 

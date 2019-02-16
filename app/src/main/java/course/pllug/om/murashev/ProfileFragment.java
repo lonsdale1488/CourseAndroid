@@ -19,7 +19,7 @@ import android.view.ViewGroup;
 import course.pllug.om.murashev.R;
 
 
-public class Profile extends Fragment {
+public class ProfileFragment extends Fragment {
     final String LOG_TAG = "ProfileLogs";
    private View root;
     Paint paint;

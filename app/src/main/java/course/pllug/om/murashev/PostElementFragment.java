@@ -26,11 +26,11 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 
-public class PostNumber extends Fragment {
+public class PostElementFragment extends Fragment {
     View inflaterView;
     TextView  postTitle, postBody;
     static int number;
-    final String LOG_TAG = "PostNumber";
+    final String LOG_TAG = "PostElementFragment";
 
 
 

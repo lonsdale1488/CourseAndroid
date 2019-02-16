@@ -1,7 +1,5 @@
 package course.pllug.om.murashev;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -85,11 +83,11 @@ public class UsersFragment extends Fragment {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View itemClicked, int position,
                                             long id) {
-                        PostNumber.number = position ;
-
-                         ((MainActivity) getActivity()).showDialogWithParametr(users.get(position ).getName(),
+                        PostElementFragment.number = position ;
+                         ((MainActivity) getActivity()).showDialog(users.get(position ).getName(),
                                  users.get(position).getCompany().getName(),users.get(position ).getPhone(),
-                                 users.get(position ).getWebsite());
+                               users.get(position ).getWebsite());
+//                        ((MainActivity) getActivity()).showDialog();
                         Log.d(LOG_TAG, "work click");
                     }
                 });
