@@ -73,6 +73,7 @@ public class PostsList extends Fragment {
 
                 int[] to = {R.id.postTitle, R.id.postBody};
                 SimpleAdapter sAdapter = new SimpleAdapter(mCtx, data, R.layout.item3, from, to);
+
                 lvSimple = (ListView) inflaterView.findViewById(R.id.postList);
                 lvSimple.setAdapter(sAdapter);
                 Log.d(LOG_TAG, "Create list");
@@ -86,7 +87,29 @@ public class PostsList extends Fragment {
                         ((MainActivity) getActivity()).showPostNumber();
                         Log.d(LOG_TAG, "work click");
                     }
+
                 });
+
+
+
+
+
+//                lvSimple.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//                    @Override
+//                    public void onItemClick(AdapterView<?> parent, View itemClicked, int position,
+//                                            long id) {
+//
+//                        PostNumber.number = position + 1;
+//                        ((MainActivity) getActivity()).showPostNumber();
+//                        Log.d(LOG_TAG, "work click");
+//                    }
+//
+//                });
+
+
+
+
+
             }
 
             @Override

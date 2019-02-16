@@ -40,12 +40,12 @@ public class AlbumNumber extends Fragment {
             @Override
             public void onResponse(Call<Albums> call, Response<Albums> response) {
                 Albums list = response.body();
-                albumUserId = (TextView) inflaterView.findViewById(R.id.albumuserid);
-                albumId = (TextView) inflaterView.findViewById(R.id.albumid);
+//                albumUserId = (TextView) inflaterView.findViewById(R.id.albumuserid);
+//                albumId = (TextView) inflaterView.findViewById(R.id.albumid);
                 albumTitle = (TextView) inflaterView.findViewById(R.id.albumtitle);
-                albumUserId.append("User id"+ "\n" + String.valueOf(list.getUserId()));
-                albumId.append("id" + "\n" + String.valueOf(list.getId()));
-                albumTitle.append("title" + "\n" + list.getTitle());
+//                albumUserId.append("User id"+ "\n" + String.valueOf(list.getUserId()));
+//                albumId.append("id" + "\n" + String.valueOf(list.getId()));
+                albumTitle.append(list.getTitle());
             }
             @Override
             public void onFailure(Call<Albums> call, Throwable t) {
